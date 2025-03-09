@@ -9,9 +9,9 @@ With this project I aim to practice
 - Client-side functionality and user interaction
 
 ## Features
-User can create a blog
-User can edit a blog
-User can delete a blog
+- User can create a blog
+- User can edit a blog
+- User can delete a blog
 
 ## Entry Point
 The main entry point of the application is the server.js-file
