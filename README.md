@@ -1,7 +1,7 @@
 # BlogWebAppWihtNodeExpressAndEJS - WORK IN PROGRESS
 
 ## Description
-The goal is tu create a blog web application using Node.js, Express.js and EJS. With the application user can create, view, edit and delete blogs posts. Posts will not persist between sessions. 
+The goal is to create a blog web application using Node.js, Express.js and EJS. With the application user can create, view, edit and delete blogs posts. Posts will not persist between sessions. 
 
 With this project I aim to practice
 - Server-side development with Node.js and Express.js
