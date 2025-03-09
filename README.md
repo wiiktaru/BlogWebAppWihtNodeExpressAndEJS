@@ -8,15 +8,15 @@ With this project I aim to practice
 - Template rendering with EJS
 - Client-side functionality and user interaction
 
-##Features
+## Features
 User can create a blog
 User can edit a blog
 User can delete a blog
 
-##Entry Point
+## Entry Point
 The main entry point of the application is the server.js-file
 
-##Technologies used
+## Technologies used
 - Visual Studio Code
 - Node.js
 - Express.js
