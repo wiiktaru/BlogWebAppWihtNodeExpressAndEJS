@@ -1,0 +1,44 @@
+<%- include("partials/header.ejs") %>
+
+<!-- Section for submitting new blog-->
+<form action="/submit" method="POST">
+  <input type="text" name="blogTitle" placeholder="Otsikko" />
+  <textarea name="blogText" placeholder="Teksti"></textarea>
+  <input type="submit" value="Tallenna" />
+</form>
+
+<!-- Section for editing a blog-->
+<div id="edit-form-container" class="hidden">
+  <form id="edit-form" action="/edit" method="POST">
+    <input type="hidden" name="blogId" id="edit-blogId" />
+    <input
+      type="text"
+      name="blogTitle"
+      id="edit-blogTitle"
+      placeholder="Otsikko"
+    />
+    <textarea
+      name="blogText"
+      id="edit-blogText"
+      placeholder="Teksti"
+    ></textarea>
+    <input type="submit" value="Tallenna muutokset" />
+  </form>
+</div>
+
+<!-- Section for displaying blogs-->
+<div id="blogs-container" class="container">
+  <% if(locals.allBlogs) { %> <% allBlogs.forEach(element => { %>
+  <div id="<%= element.blogId %>" class="blog">
+    <h2><%= element.blogTitle %></h2>
+    <p><%= element.blogText%></p>
+    <button data-id="<%= element.blogId %>" class="delete">Poista</button>
+    <button data-id="<%= element.blogId %>" class="edit">Muokkaa</button>
+  </div>
+  <%})%> <% } %>
+
+  <!--Adding jQuery and js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/index.js" charset="UTF-8"></script>
+</div>
+<%- include("partials/footer.ejs") %>
