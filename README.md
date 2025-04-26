@@ -17,11 +17,15 @@ With this project I aim to practice
 The main entry point of the application is the server.js-file
 
 ## Technologies used
-- Visual Studio Code
-- Node.js
-- Express.js
-- EJS
-- Body-Parser
-- jQuery
+Front-end: 
 - HTML
 - CSS
+- jQUery (Framework)
+
+Back-end:
+- Node.js
+- Express (Framework)
+
+IDE:
+- Visual Studio Code 
+
